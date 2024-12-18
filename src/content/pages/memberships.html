@@ -1,0 +1,42 @@
+---
+title: 'Our Memberships'
+description: 'Memberships'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'memberships/'
+eleventyNavigation:
+    key: Memberships
+    order: 300
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    
+{% endblock %}
+
+{% block body %}
+
+
+                             
+<div id="book" style="padding-top:100px">
+<h1 class="cs-title" style="text-align: center;">Become A Member</h1>
+    
+
+
+<script src='https://teamupstatic.com/teamup.js' type='text/javascript'></script>
+<script type='text/javascript'>
+teamup.calendar({
+provider_id:9818075,
+type:"specific_pages",
+width:"100%",
+specific_pages:["memberships"],
+view:"memberships",
+venue_ids:"~all",
+free_trial_membership:"",
+disable_venue_selector:false,
+version: 3
+});
+</script>
+</div>
+
+{% endblock %}
