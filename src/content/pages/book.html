@@ -1,6 +1,7 @@
 ---
 title: 'Book a Class'
 description: 'Book a Class'
+preloadImg: '/assets/images/cabinets2.jpg'
 permalink: 'book/'
 eleventyNavigation:
     key: Services
@@ -17,8 +18,23 @@ eleventyNavigation:
 
 
                              
-{% include 'components/content_book.html' %}
+<div id="book" style="padding-top:0px">
+    
+    <script src='https://teamupstatic.com/teamup.js' type='text/javascript'></script>
+    <script type='text/javascript'>
+    teamup.calendar({
+    provider_id:9818075,
+    type:"main",
+    width:"100%",
+    specific_pages:["store"],
+    view:"schedule.month",
+    venue_ids:"~all",
+    free_trial_membership:"",
+    disable_venue_selector:false,
+    version: 3
+    });
+    </script>
 
-
+</div>
 
 {% endblock %}
